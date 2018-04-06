@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+}
+
+.buttonBack{
+    display: block;
+    width: 200px;
+    text-align: center;
+    background-color: #ff6600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+.linkPeople:hover{
+    background-color: #ff8533;
+}

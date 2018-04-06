@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PeopleService } from './people.service';
+import { ListPeopleComponent } from './list-people/list-people.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { InfoPeopleComponent } from './info-people/info-people.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListPeopleComponent,
+    InfoPeopleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [PeopleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

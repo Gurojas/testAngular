@@ -1,0 +1,18 @@
+<div>
+  <h2>
+    {{people.name}} profile
+  </h2>
+  <div>
+    <ul>
+      <li>Id: <span>{{people.id}}</span></li>
+      <li>Name: <span>{{people.name}}</span></li>
+      <li>Last Name: <span>{{people.lastName}}</span></li>
+      <li>Age: <span>{{people.age}}</span></li>
+      <li *ngIf="people.hobbies.length > 0">Hobbies: </li>
+      <ul>
+        <li *ngFor="let hobbie of people.hobbies"><span>{{hobbie}}</span></li>
+      </ul>
+    </ul>
+    <a routerLink="/list-people"><span class="buttonBack">Back</span></a>
+  </div>
+</div>
